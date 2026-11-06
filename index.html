@@ -36,6 +36,17 @@ a.card-link{display:block;text-decoration:none;color:inherit;height:100%}a.card-
 .art.research img{object-fit:contain;object-position:center;background:#0c0913}
 .art.research{height:235px;background:#0c0913}
 @media(max-width:780px){.art.research{height:220px}}
+
+/* Version 3: more comfortable reading and clearer navigation */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap');
+:root{--ink:#211d2b;--muted:#51495e;--purple:#7351a5;--border:#ded2e9}
+body{font-family:'Inter',Arial,Helvetica,sans-serif;color:var(--ink);background:#faf9fc;-webkit-font-smoothing:antialiased}
+.brand{font-size:22px;font-weight:750;letter-spacing:-.55px}
+.nav{min-height:88px}
+nav{gap:23px}
+nav a{font-size:16px;font-weight:650;color:#29213f}
+nav a:hover,nav a[aria-current='page']{color:#7351a5}
+@media(max-width:780px){.nav{min-height:0}nav{gap:12px 18px}nav a{font-size:15px}}
 </style>
 </head>
 <body>

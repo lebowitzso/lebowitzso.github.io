@@ -31,6 +31,34 @@ body{background:#faf9fc;color:var(--ink)}header{background:#faf9fc}
 .publication{font-size:13px!important;color:var(--muted);margin:18px 0 0!important;text-align:left!important}.publication strong{color:var(--ink)}
 @media(max-width:800px){.overview-grid,.project-grid,.oiii-intro-grid,.subsection-grid{grid-template-columns:1fr;gap:24px}.intro-image-column{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.intro-image-column figure{max-width:none}.intro-image-column img{max-height:250px}.subsection-grid.reverse .visual,.subsection-grid.reverse .copy{order:initial}.research-body p{text-align:left;hyphens:none}.research-body figcaption{text-align:left}.research-section{padding:42px 0 50px}.research-body{padding:0 22px 70px}}
 @media(max-width:480px){.intro-image-column{grid-template-columns:1fr}.intro-image-column figure{max-width:340px}.page-title{padding-top:28px}}
+
+/* Version 3: more comfortable reading and clearer navigation */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap');
+:root{--ink:#211d2b;--muted:#51495e;--purple:#7351a5;--border:#ded2e9}
+body{font-family:'Inter',Arial,Helvetica,sans-serif;color:var(--ink);background:#faf9fc;-webkit-font-smoothing:antialiased}
+.brand{font-size:22px;font-weight:750;letter-spacing:-.55px}
+.nav{min-height:88px}
+nav{gap:23px}
+nav a{font-size:16px;font-weight:650;color:#29213f}
+nav a:hover,nav a[aria-current='page']{color:#7351a5}
+@media(max-width:780px){.nav{min-height:0}nav{gap:12px 18px}nav a{font-size:15px}}
+
+/* Research page refinements */
+.back-link{font-size:16px;font-weight:650}
+.research-body h2,.research-body h3{color:#29213f}
+.research-body p{font-size:16.5px;line-height:1.82;hyphens:none;overflow-wrap:normal}
+.research-body figcaption{font-size:14.5px;line-height:1.5;color:#51495e;hyphens:none;text-align:justify;text-justify:inter-word}
+.research-section{border-bottom:3px solid #594277}
+.subsection{border-top:2px solid #a18ab9}
+.overview-grid{grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:start}
+.intro-image-column{gap:18px;justify-items:start}
+.intro-image-column figure{max-width:300px;margin:0;width:100%}
+.intro-image-column img{width:100%;height:auto;max-height:210px;object-fit:contain;object-position:left center;background:transparent}
+.oiii-intro-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,.88fr);gap:40px}
+.oiii-intro-grid figure{align-self:center}
+.publication{font-size:14px!important}
+@media(max-width:800px){.overview-grid,.project-grid,.oiii-intro-grid,.subsection-grid{grid-template-columns:1fr;gap:24px}.intro-image-column{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.intro-image-column figure{max-width:none}.intro-image-column img{max-height:220px}.research-body p,.research-body figcaption{text-align:left}.research-body p{hyphens:none}}
+@media(max-width:480px){.intro-image-column{grid-template-columns:1fr}.intro-image-column figure{max-width:340px}}
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="index.html">Sophie <span>Lebowitz</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="index.html#publications">Publications</a><a href="index.html#outreach">Education &amp; Outreach</a><a href="index.html#cv">CV</a><a href="index.html#about">About</a></nav></div></header>
 <main><div class="wrap page-title"><a class="back-link" href="index.html">← Back to home</a></div><div class="research-body">
