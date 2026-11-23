@@ -5,73 +5,574 @@
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Sophie Lebowitz, Ph.D. | Astronomer</title>
 <meta content="Sophie Lebowitz is a postdoctoral researcher at the National Radio Astronomy Observatory studying supermassive black holes and galaxy evolution." name="description"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
-:root{--ink:#252039;--muted:#655e74;--purple:#7351a5;--lav:#f4effa;--border:#e9e1f1}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;background:#fff;line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid #a58bd5;outline-offset:4px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:white;border-bottom:1px solid var(--border)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:78px}.brand{font-size:19px;font-weight:750;text-decoration:none;letter-spacing:-.5px}.brand span{color:var(--purple)}nav{display:flex;flex-wrap:wrap;gap:21px}nav a{font-size:13px;font-weight:650;text-decoration:none;color:#4b405e}nav a:hover{color:var(--purple)}.hero{position:relative;min-height:490px;display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 78% 38%,#7d4baf66,transparent 35%),radial-gradient(ellipse at 68% 76%,#f7b5c133,transparent 30%),linear-gradient(120deg,#151025,#282044 65%,#35265d);color:#fff}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,7,24,.19) 0%,rgba(14,9,29,.035) 48%,rgba(22,14,42,0) 78%);pointer-events:none}.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:transparent;opacity:0}.hero .wrap{width:100%;position:relative;z-index:2}.hero-content{max-width:640px;padding:92px 0}.eyebrow{text-transform:uppercase;letter-spacing:2.4px;font-size:12px;font-weight:750;color:#d5b9fa}.hero h1{font-family:Georgia,serif;font-size:clamp(43px,6vw,70px);line-height:1.1;letter-spacing:-1.5px;margin:14px 0}.hero .position{font-size:16px;color:#e4d7f1;margin:0 0 24px}.hero .intro{text-shadow:0 2px 10px rgba(0,0,0,.9),0 0 3px rgba(0,0,0,.8);font-size:20px;line-height:1.6;max-width:570px;color:#f4eefc}.button{display:inline-block;background:#fff;color:#4e3079;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:750;font-size:14px;margin-top:18px}.button:hover{background:#eee3fa}.section{padding:70px 0 90px}.section h2{font-family:Georgia,serif;font-size:34px;letter-spacing:-.7px;margin:0 0 10px}.section-lead{color:var(--muted);margin:0 0 36px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.card{border:1px solid var(--border);border-radius:9px;overflow:hidden;background:#fff;box-shadow:0 8px 26px #39244c0b}.art{height:210px;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;background:linear-gradient(145deg,#251a3e,#664d8c);color:#eee5ff}.art.research{background:radial-gradient(circle at 55% 50%,#3c9c7970,transparent 34%),linear-gradient(145deg,#182c38,#30214f)}.art.about{background:linear-gradient(145deg,#e9dff3,#bba6d9);color:#4a366b}.art.outreach{background:linear-gradient(145deg,#342b5b,#7d579b)}.art small{font-size:12px;letter-spacing:.4px;max-width:220px}.card-content{padding:24px}.card h3{font-family:Georgia,serif;font-size:23px;margin:0 0 9px}.card p{color:var(--muted);font-size:14px;margin:0 0 18px;min-height:91px}.card a{font-size:14px;font-weight:750;color:var(--purple);text-decoration:none}.card a:hover{text-decoration:underline}.note{margin-top:28px;font-size:12px;color:#7d7489}.bottom{background:var(--lav);padding:36px 0;text-align:center;color:#635675;font-size:14px}.bottom a{color:#5c3a8c}footer{border-top:1px solid var(--border);padding:24px 0;font-size:12px;color:#82798e;text-align:center}@media(max-width:780px){.nav{padding-top:18px;padding-bottom:18px;align-items:flex-start;flex-direction:column;gap:12px}nav{gap:12px 18px}.hero{min-height:420px}.hero-content{padding:65px 0}.cards{grid-template-columns:1fr}.card p{min-height:0}.art{height:190px}.section{padding:48px 0}}
-@media(prefers-reduced-motion:reduce){.hero-video{display:none}.hero{background:#1b1533 url("jades-poster.jpg") center/cover no-repeat}}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="shared-style.css">
+<style>
+/* HOMEPAGE STYLES — page-specific typography, colors, layout and images. */
+/* Shared font and navigation settings are in shared-style.css. */
 
-/* November 2026 research preview additions */
-.hero-video{filter:brightness(1.42) saturate(1.13)}
-.hero-content{max-width:720px}.hero .intro{max-width:690px;font-size:17px;line-height:1.7;margin:0 0 10px}
-.hero{min-height:570px}.hero:before{background:linear-gradient(90deg,rgba(10,7,24,.67),rgba(14,9,29,.35) 55%,rgba(22,14,42,.08))}
-.art.research{padding:0;background:#151025}.art.research img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.page-title{padding:68px 0 26px}.page-title h1{font:normal clamp(36px,4.6vw,55px)/1.15 Georgia,serif;margin:0 0 15px;letter-spacing:-1px}
-.research-body{max-width:1020px;margin:0 auto;padding:0 28px 95px}.research-body p{font-size:16px;line-height:1.85;margin:0 0 17px}.research-body h2{font:normal clamp(29px,3.2vw,39px)/1.2 Georgia,serif;letter-spacing:-.5px;margin:0 0 24px}.research-body h3{font:normal 26px Georgia,serif;margin:0 0 15px}.research-section{padding:52px 0 65px;border-bottom:1px solid var(--border)}.research-section:last-child{border-bottom:0}
-.intro-images{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0 0}.intro-images figure,.research-body figure{margin:0}.intro-images .photo{height:255px;background:#0b0b12;border-radius:5px;display:flex;align-items:center;justify-content:center;overflow:hidden}.intro-images img{display:block;width:100%;height:100%;object-fit:contain}.research-body figcaption{font-size:12px;color:var(--muted);margin-top:9px;line-height:1.5;text-align:center}
-.spiderweb-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.9fr);gap:34px;align-items:start}.spiderweb-layout img{width:100%;height:auto;display:block;border-radius:4px}
-.jades-feature{margin:26px 0 32px!important}.jades-feature img{display:block;width:100%;height:auto;border-radius:4px}
-.subsection{padding:32px 0 10px}.simulation-figure{max-width:900px;margin:24px auto 0!important}.simulation-figure img{width:100%;height:auto;display:block}
-.observation-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(285px,.9fr);gap:35px;align-items:start}.observation-layout img{width:100%;height:auto;display:block;border-radius:4px}
-.publication{font-size:13px!important;color:var(--muted);margin:18px 0 0!important}.publication strong{color:var(--ink)}.back-link{color:var(--purple);text-decoration:none;font-size:14px;font-weight:bold}.back-link:hover{text-decoration:underline}
-@media(max-width:780px){.hero{min-height:530px}.hero-content{padding:70px 0}.hero .intro{font-size:16px}.research-section{padding:38px 0 48px}.spiderweb-layout,.observation-layout{grid-template-columns:1fr}.intro-images{gap:12px}.intro-images .photo{height:190px}.research-body{padding:0 22px 60px}.page-title{padding:45px 0 10px}}
-@media(max-width:480px){.intro-images{grid-template-columns:1fr}.intro-images .photo{height:230px}.hero h1{font-size:45px}}
+:root {
+  --home-background: #11151c;
+  --home-text-color: #e8edf2;
+  --home-muted-color: #e8edf2;
+  --home-heading-color: #e8edf2;
+  --home-position-color: #f8b65ac0;
+  --home-accent-color: #f8b65ac0; /*#eca821d7;*/
+  --home-card-background: #1b202b;
+  --home-panel-color: rgba(0, 0, 0, 0.75);
+  --home-body-size: 23px;
+  --home-name-size: 64px;
+  --home-position-size: 23.5px;
+  --home-bio-size: 23px;
+  --home-section-title-size: 34px;
+  --home-card-title-size: 23px;
+  --home-card-body-size: 18px;
+  --home-card-heading-color: #e8edf2;
+  --home-card-link-color: #f8b65ac0;
+  --home-hero-height: 570px;
+  --home-hero-gap: 42px;
+  --home-hero-top-bottom-padding: 45px;
+  --home-panel-width: 740px;
+  --home-panel-padding: 0px;
+  --home-panel-right: 0px;
+  --home-panel-down: 0px;
+  --home-bio-width: 676px;
+  --home-bio-right: 0px;
+  --home-bio-down: -35px;
+  --home-name-right: 0px;
+  --home-name-down: -12px;
+  --home-position-right: 0px;
+  --home-position-down: -20px;
+  --home-headshot-width: 280px;
+  --home-headshot-height: 330px;
+  --home-headshot-right: -5px;
+  --home-headshot-down: -10px;
 
 
-/* Editorial refinement */
-:root{--ink:#29243b;--muted:#514b60;--purple:#7351a5;--lav:#f4effa;--border:#e6e0ec}
-body{background:#faf9fc;color:var(--ink)}header{background:#faf9fc}
-.card{transition:transform .2s,box-shadow .2s;background:#fff}
-.card:hover{transform:translateY(-3px);box-shadow:0 14px 32px #39244c1a}
-a.card-link{display:block;text-decoration:none;color:inherit;height:100%}a.card-link:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
-.card-link .card-content .card-cta{font-size:14px;font-weight:750;color:var(--purple)}
-.art.research img{object-fit:contain;object-position:center;background:#0c0913}
-.art.research{height:235px;background:#0c0913}
-@media(max-width:780px){.art.research{height:220px}}
+  --home-button-text-color: #e8edf2;
+  --home-button-border-color: #f8b65ac0;
+  --home-button-background: #25202e;
+  --home-button-hover-color: #393044;
 
-/* Version 3: more comfortable reading and clearer navigation */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap');
-:root{--ink:#211d2b;--muted:#51495e;--purple:#7351a5;--border:#ded2e9}
-body{font-family:'Inter',Arial,Helvetica,sans-serif;color:var(--ink);background:#faf9fc;-webkit-font-smoothing:antialiased}
-.brand{font-size:22px;font-weight:750;letter-spacing:-.55px}
-.nav{min-height:88px}
-nav{gap:23px}
-nav a{font-size:16px;font-weight:650;color:#29213f}
-nav a:hover,nav a[aria-current='page']{color:#7351a5}
-@media(max-width:780px){.nav{min-height:0}nav{gap:12px 18px}nav a{font-size:15px}}
+  --ink: #211d2b;
+  --muted: #51495e;
+  --purple: #7351a5;
+  --lav: #f4effa;
+  --border: #726758e2;
+  --site-text: #171321;
+  --card-art-height: 235px;
+}
 
-/* VERSION 4 — Homepage layout controls */
-:root{--site-text:#171321;--card-art-height:235px}
-body{font-family:'Source Sans 3','Segoe UI',Arial,sans-serif;color:var(--site-text);-webkit-font-smoothing:auto}
-.cards{align-items:stretch}
-a.card-link{display:flex;min-width:0;height:100%}
-a.card-link .card{width:100%;display:flex;flex-direction:column;height:100%}
-.card .art,.art.research{height:var(--card-art-height);min-height:var(--card-art-height);flex:none}
-.card .card-content{display:flex;flex-direction:column;flex:1}
-.card .card-content .card-cta{margin-top:auto}
-.card p{min-height:0}
-@media(max-width:780px){.card .art,.art.research{height:210px;min-height:210px}}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: auto;
+  background: var(--home-background);
+  color: var(--home-text-color);
+  font-size: var(--home-body-size);
+}
+
+.hero {
+  position: relative;
+  min-height: var(--home-hero-height);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 78% 38%,#7d4baf66,transparent 35%),radial-gradient(ellipse at 68% 76%,#f7b5c133,transparent 30%),linear-gradient(120deg,#151025,#282044 65%,#35265d);
+  color: #fff;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  filter: brightness(1.42) saturate(1.13);
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg,rgba(10,7,24,.67),rgba(14,9,29,.35) 55%,rgba(22,14,42,.08));
+  pointer-events: none;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: transparent;
+  opacity: 0;
+}
+
+.hero .wrap {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, var(--home-panel-width)) minmax(0, var(--home-headshot-width));
+  gap: var(--home-hero-gap);
+  align-items: center;
+  padding-top: var(--home-hero-top-bottom-padding);
+  padding-bottom: var(--home-hero-top-bottom-padding);
+}
+
+.hero-content {
+  max-width: var(--home-panel-width);
+  padding: var(--home-panel-padding);
+  width: 100%;
+  min-width: 0;
+  background: var(--home-panel-color);
+  border-radius: 8px;
+  transform: translate(var(--home-panel-right), var(--home-panel-down));
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  font-size: 17px;
+  font-weight: 750;
+  color: #726758e2;
+}
+
+.hero h1 {
+  font-size: var(--home-name-size);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin: 14px 0;
+  color: var(--home-heading-color);
+  transform: translate(var(--home-name-right), var(--home-name-down));
+}
+
+.hero .position {
+  font-size: var(--home-position-size);
+  font-weight: 600;
+  color: var(--home-position-color);
+  margin: 0 0 24px;
+  transform: translate(var(--home-position-right), var(--home-position-down));
+}
+
+.hero .intro {
+  text-shadow: 0 2px 10px rgba(0,0,0,.9),0 0 3px rgba(0,0,0,.8);
+  font-size: var(--home-bio-size);
+  line-height: 1.4;
+  max-width: var(--home-bio-width);
+  color: var(--home-text-color);
+  margin: 0 0 10px;
+  width: 100%;
+  text-align: justify;
+  hyphens: none;
+  transform: translate(var(--home-bio-right), var(--home-bio-down));
+}
+
+.button {
+  display: inline-block;
+  background: var(--home-button-background);
+  color: var(--home-button-text-color);
+  border: 1px solid var(--home-button-border-color);
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 4px;
+  transform: translateY(-15px);
+}
+
+.button:hover {
+  background: var(--home-button-hover-color);
+}
+
+.section {
+  padding: 70px 0 90px;
+}
+
+.section h2 {
+  font-size: var(--home-section-title-size);
+  letter-spacing: -.7px;
+  margin: 0 0 10px;
+  color: var(--home-heading-color);
+}
+
+.section-lead {
+  color: var(--home-muted-color);
+  margin: 0 0 36px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--home-card-background);
+  box-shadow: 0 8px 26px #39244c0b;
+  transition: transform .2s,box-shadow .2s;
+  border-color: var(--home-border-color);
+}
+
+.art {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(145deg,#251a3e,#664d8c);
+  color: #726758e2;
+}
+
+.art.research {
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.art.research img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.art.talks {
+  padding: 0;
+  overflow: hidden;
+  background: none;
+}
+
+.art.talks img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.art.outreach {
+  padding: 0;
+  overflow: hidden;
+  background: none;
+}
+
+
+.art.outreach img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.art small {
+  font-size: 12px;
+  letter-spacing: .4px;
+  max-width: 220px;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card h3 {
+  font-size: var(--home-card-title-size);
+  margin: 0 0 9px;
+  color: var(--home-card-heading-color);
+}
+
+.card p {
+  color: var(--home-muted-color);
+  font-size: var(--home-card-body-size);
+  margin: 0 0 18px;
+  min-height: 0;
+}
+
+.card a {
+  font-size: 18px;
+  font-weight: 750;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  margin-top: 28px;
+  font-size: 12px;
+  color: #7d7489;
+}
+
+.bottom {
+  background: var(--home-card-background);
+  padding: 36px 0;
+  text-align: center;
+  color: var(--home-muted-color);
+  font-size: 14px;
+}
+
+.bottom a {
+  color: var(--home-accent-color);
+}
+
+footer {
+  width: calc(100% - 56px);
+  max-width: 1060px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  border-top: 1px solid #726758e2;
+  padding: 24px 0;
+
+  font-size: 12px;
+  color: var(--home-muted-color);
+  text-align: center;
+}
+
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px #39244c1a;
+}
+
+a.card-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  min-width: 0;
+}
+
+a.card-link:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 3px;
+}
+
+.card-link .card-content .card-cta {
+  font-size: 18px;
+  font-weight: 750;
+  color: var(--home-card-link-color);
+}
+
+a.card-link .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card .art,.art.research {
+  height: var(--card-art-height);
+  min-height: var(--card-art-height);
+  flex: none;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card .card-content .card-cta {
+  margin-top: auto;
+}
+
+.card a {
+  color: var(--home-accent-color);
+}
+
+.hero .eyebrow {
+  color: var(--home-accent-color);
+}
+
+.hero-headshot {
+  width: var(--home-headshot-width);
+  height: var(--home-headshot-height);
+  max-width: 100%;
+  border: 1px solid var(--home-muted-color);
+  background: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  transform: translate(var(--home-headshot-right), var(--home-headshot-down));
+}
+
+.hero-headshot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width:780px) {
+  .hero {
+    min-height: 530px;
+  }
+
+  .hero-content {
+    padding: 70px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card p {
+    min-height: 0;
+  }
+
+  .art {
+    height: 190px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+
+  .art.research {
+    height: 220px;
+  }
+
+  .card .art,.art.research {
+    height: 210px;
+    min-height: 210px;
+  }
+
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .hero-video {
+    display: none;
+  }
+
+  .hero {
+    background: #1b1533 url("jades-poster.jpg") center/cover no-repeat;
+  }
+
+}
+
+@media (max-width:480px) {
+
+}
+
+@media (max-width: 850px) {
+  .hero .wrap {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-headshot {
+    width: min(100%, var(--home-headshot-width));
+    height: var(--home-headshot-height);
+    justify-self: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 8vw, var(--home-name-size));
+  }
+
+  .hero .intro {
+    font-size: var(--home-bio-size);
+  }
+
+}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="index.html">Sophie <span>Lebowitz</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="research.html">Research</a><a href="#publications">Publications</a><a href="#outreach">Education &amp; Outreach</a><a href="#cv">CV</a><a href="#about">About</a></nav></div></header>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Sophie <span>Lebowitz</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="outreach.html">Education &amp; Outreach</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</header>
 <main>
-<section class="hero"><video aria-hidden="true" autoplay="" class="hero-video" muted="" playsinline="" poster="jades-poster.jpg" preload="metadata"><source src="jades-flythrough.mp4" type="video/mp4"/></video><div class="wrap"><div class="hero-content"><div class="eyebrow">Astronomy · Galaxy Evolution · AGN</div><h1>Sophie Lebowitz</h1><p class="position">Postdoctoral Researcher · National Radio Astronomy Observatory</p><p class="intro">My research aims to uncover how growing supermassive black holes shape our universe by focusing on the peak epoch of galaxy growth known as <em>cosmic noon</em>. I combine observations from the James Webb Space Telescope and leading radio observatories to connect black hole activity with the multiphase gas reservoirs that fuel star formation and drive galaxy evolution. Outside of research, I enjoy sharing my enthusiasm for astronomy through education and outreach, especially by developing engaging learning experiences that bring modern astrophysics into classrooms.</p><a class="button" href="#research">Explore my work</a></div></div></section>
-<section class="section" id="research"><div class="wrap"><h2>Explore my work</h2><p class="section-lead">Research, science communication, and the story behind the science.</p><div class="cards">
-<a aria-label="Research" class="card-link" href="research.html"><article class="card"><div class="art research"><img alt="Artist’s impression of an active galactic nucleus with luminous outflows" src="images/research-thumbnail.jpg"/></div><div class="card-content"><h3>Research</h3><p>From spatially resolved AGN emission at cosmic noon to molecular gas in the circumgalactic medium.</p><span class="card-cta">Explore research →</span></div></article></a>
-<a aria-label="About Me" class="card-link" href="#about"><article class="card" id="about"><div class="art about"><small>YOUR PORTRAIT OR PERSONAL IMAGE<br/>Image to be added</small></div><div class="card-content"><h3>About Me</h3><p>Learn about my background, my path into astronomy, and the questions that drive my work.</p><span class="card-cta">About page coming soon →</span></div></article></a>
-<a aria-label="Education &amp; Outreach" class="card-link" href="#outreach"><article class="card" id="outreach"><div class="art outreach"><small>DISCOVERING BLACK HOLES PHOTO<br/>Image to be added</small></div><div class="card-content"><h3>Education &amp; Outreach</h3><p>Making astrophysics accessible through hands-on learning, public engagement, and Discovering Black Holes.</p><span class="card-cta">Outreach page coming soon →</span></div></article></a>
-</div></div></section>
-<section class="bottom" id="publications"><div class="wrap">Publications and a downloadable <span id="cv">CV</span> will be added in the next stages.</div></section>
-</main><script>
+<section class="hero"><video aria-hidden="true" autoplay="" class="hero-video" muted="" playsinline="" poster="jades-poster.jpg" preload="metadata"><source src="jades-flythrough.mp4" type="video/mp4"/></video><div class="wrap"><div class="hero-content"><div class="eyebrow">Astronomy · Galaxy Evolution · AGN</div><h1>Sophie Lebowitz</h1><p class="position">
+  Postdoctoral Researcher · National Radio Astronomy Observatory</p><p class="intro">
+  My research explores how active supermassive black holes drive galaxy evolution during <em>cosmic noon</em>, the peak epoch of galaxy
+   growth. By combining observations from the James Webb Space Telescope and leading radio 
+   observatories, I investigate the connection between black hole activity and the gaseous reservoirs that fuel star formation. 
+   Outside of research, I enjoy bringing modern astrophysics into student classrooms through education and outreach.
+  </p><a class="button" href="#research">Explore my work</a></div>
+  <div class="hero-headshot">
+  <img src="images/headshot.jpg" alt="Portrait of Sophie Lebowitz">
+  </div>
+</div>
+</section>
+<section class="section" id="research"><div class="wrap"><h2>Explore my work</h2><p class="section-lead">Research, science communication, and astronomy education.</p><div class="cards">
+<a aria-label="Research" class="card-link" href="research.html">
+  <article class="card">
+    <div class="art research">
+      <img alt="Artist’s impression of an active galactic nucleus with luminous outflows" src="images/research-thumbnail.jpg"/>
+    </div>
+    <div class="card-content">
+      <h3>Research</h3>
+      <p>From spatially resolved AGN emission at cosmic noon to molecular gas in the circumgalactic medium.</p>
+      <span class="card-cta">Explore research →</span>
+    </div>
+  </article>
+</a>
+<a aria-label="Talks" class="card-link" href="talks.html">
+  <article class="card" id="talks">
+
+    <div class="art talks">
+      <img
+        src="images/talk_pic.jpg"
+        alt="Presenting at the Steward Observatory Symposium"
+      >
+    </div>
+
+    <div class="card-content">
+      <h3>Talks</h3>
+
+      <p>
+        Sharing discoveries about black holes and galaxy evolution with scientific and public audiences.
+      </p>
+
+      <span class="card-cta">Explore Talks →</span>
+    </div>
+
+  </article>
+</a>
+<a aria-label="Education &amp; Outreach" class="card-link" href="outreach.html">
+  <article class="card" id="outreach">
+    <div class="art outreach">
+      <img src="images/classroom_DBH.png" alt="Teaching Discovering Black Holes to a classroom of students">
+    </div>
+    <div class="card-content">
+      <h3>Education &amp; Outreach</h3>
+      <p>Making astrophysics accessible through student engagement and hands-on learning.</p>
+      <span class="card-cta">Explore Education &amp; Outreach →</span>
+    </div>
+  </article>
+</div></div>
+</section>
+</section>
+</main>
+<script>
 // Repeat the first ten seconds of the JADES fly-through.
 const heroVideo = document.querySelector('.hero-video');
 if (heroVideo) {
@@ -82,5 +583,9 @@ if (heroVideo) {
     }
   });
 }
-</script><footer><div class="wrap">© 2026 Sophie Lebowitz · Built with GitHub Pages</div></footer>
-</body></html>
+</script>
+<footer><div class="wrap">© 2026 Sophie Lebowitz · Built with GitHub Pages</div>
+</footer>
+</body>
+</html>
+

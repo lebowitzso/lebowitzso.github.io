@@ -1,0 +1,248 @@
+
+/* PUBLICATIONS & CV — PAGE CONTROLS */
+:root {
+
+  /* COLORS */
+  --academic-background: #0d1016;
+  --academic-text: #cacdd0;
+  --academic-accent: #f8b65ac0;
+  --academic-rule: #726758e2;
+  --paper-title-color: #e8edf2;
+  --paragraph-color: #e8edf2;
+
+  --cv-button-text-color: #e8edf2;
+  --cv-button-border-color: #f8b65ac0;
+  --cv-button-background: #25202e;
+  --cv-button-hover-color: #393044;
+
+  /* PAGE DIMENSIONS */
+  --academic-width: 980px;
+  --page-padding-top: 55px;
+  --page-padding-bottom: 100px;
+  --page-side-padding: 28px;
+
+  /* FONT SIZES */
+  --h1-font-size: clamp(34px, 3.2vw, 39px);
+  --h2-font-size: 28px;
+  --intro-font-size: 23px;
+  --cv-description-font-size: 26px;
+
+  /* ONE FONT SIZE FOR ALL PUBLICATION ENTRIES */
+  --publication-font-size: 23px;
+  --cv-link-font-size: 24px;
+
+  /* HEADING SPACING */
+  --h1-spacing-below: 24px;
+  --h2-spacing-below: 24px;
+
+  /* SECTION SPACING */
+  --section-spacing-above: 35px;
+  --section-padding-top: 28px;
+
+  /* PUBLICATION SPACING */
+  --publication-spacing-below: 27px;
+  --publication-details-spacing: 6px;
+  --publication-line-height: 1.55;
+  --publication-list-indent: 26px;
+  --publication-text-indent: 10px;
+
+  /* INTRODUCTION */
+  --intro-max-width: 850px;
+  --paragraph-spacing-below: 20px;
+
+  /* CV DOWNLOAD BUTTON */
+  --cv-link-padding-vertical: 13px;
+  --cv-link-padding-horizontal: 20px;
+  --cv-link-spacing-above: 12px;
+}
+
+
+/* =========================================
+   PAGE LAYOUT
+   ========================================= */
+
+body {
+  background: var(--academic-background);
+  color: var(--academic-text);
+}
+
+.academic-body {
+  max-width: var(--academic-width);
+  margin: 0 auto;
+  padding:
+    var(--page-padding-top)
+    var(--page-side-padding)
+    var(--page-padding-bottom);
+  min-height: 65vh;
+}
+
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+.academic-body h1 {
+  color: var(--academic-accent);
+  font-size: var(--h1-font-size);
+  font-weight: 550;
+  margin: 0 0 var(--h1-spacing-below);
+}
+
+.academic-body h2 {
+  color: var(--academic-accent);
+  font-size: var(--h2-font-size);
+  font-weight: 600;
+  margin: 0 0 var(--h2-spacing-below);
+}
+
+
+/* =========================================
+   INTRODUCTION & GENERAL TEXT
+   ========================================= */
+
+.academic-body p {
+  color: var(--paragraph-color);
+  font-size: var(--intro-font-size);
+  line-height: 1.6;
+  margin: 0 0 var(--paragraph-spacing-below);
+}
+/* CV DESCRIPTION */
+.academic-body > p:not(.page-intro) {
+  font-size: var(--cv-description-font-size);
+}
+
+.academic-body a {
+  color: var(--academic-accent);
+}
+
+.page-intro {
+  max-width: var(--intro-max-width);
+}
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+.academic-section {
+  border-top: 1px solid var(--academic-rule);
+  margin-top: var(--section-spacing-above);
+  padding-top: var(--section-padding-top);
+}
+
+
+/* =========================================
+   PUBLICATIONS — ALL ENTRIES SAME FONT SIZE
+   ========================================= */
+
+/* Refereed publication list */
+.publication-list {
+  padding-left: var(--publication-list-indent);
+  margin: 0;
+}
+
+.publication-list li {
+  padding-left: var(--publication-text-indent);
+  margin-bottom: var(--publication-spacing-below);
+  line-height: var(--publication-line-height);
+  font-size: var(--publication-font-size);
+}
+
+/* Refereed publication titles */
+.academic-body .paper-title {
+  color: var(--paper-title-color);
+  font-size: inherit;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.paper-title:hover {
+  text-decoration: underline;
+}
+
+/* Refereed publication authors and journals */
+.academic-body .paper-details {
+  color: var(--academic-text);
+  font-size: inherit;
+  margin-top: var(--publication-details-spacing);
+}
+
+/* Astronomy education publication */
+.academic-body .academic-section > p {
+  color: var(--paragraph-color);
+  font-size: var(--publication-font-size);
+  line-height: var(--publication-line-height);
+}
+
+
+/* =========================================
+   CV DOWNLOAD LINK
+   ========================================= */
+
+.download-link {
+  display: inline-block;
+  color: var(--cv-button-text-color);
+  background: var(--cv-button-background);
+  font-size: var(--cv-link-font-size);
+  font-weight: 650;
+  text-decoration: none;
+
+  border: 1px solid var(--cv-button-border-color);
+  border-radius: 5px;
+
+  padding:
+    var(--cv-link-padding-vertical)
+    var(--cv-link-padding-horizontal);
+
+  margin-top: var(--cv-link-spacing-above);
+}
+
+.academic-body a.download-link {
+  color: var(--cv-button-text-color);
+}
+
+.download-link:hover {
+  background: var(--cv-button-hover-color);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  width: calc(100% - 56px);
+  max-width: 1060px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-top: 1px solid #726758e2;
+  padding: 24px 0;
+  font-size: 12px;
+  color: var(--home-muted-color);
+  text-align: center;
+}
+
+.academic-body a.back-link {
+  display: inline-block;
+  color: #e8edf2;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 650;
+  position: relative;
+  left: -70px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .academic-body {
+    padding: 35px 22px 70px;
+  }
+
+}
+
+

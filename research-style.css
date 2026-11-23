@@ -1,0 +1,582 @@
+/* RESEARCH PAGE STYLES — page-specific typography, colors, layout and images. */
+/* Shared font and navigation settings are in shared-style.css. */
+
+
+:root {
+  /* GENERAL TYPOGRAPHY */
+  --body-font-size: 22px;
+  --caption-font-size: 18px;
+  --body-text-color: #e8edf2;
+  --caption-text-color: #e8edf2;
+  --publication-text-color: #e8edf2;
+
+  /* PAGE COLORS */
+  --background-color: #11151c;
+  --page-background: #0d1016;
+  --text-color: #e8edf2;
+  --heading-color: #f8b65ac0; /*#a689cc;/*   /*#eca821d7;#a678df*/
+  --subheading-color: #e1bc88df;
+  --section-divider-color: #726758e2;
+  --subsection-divider-color: #726758e2;
+  --figure-heading-color: #c4c7d0;
+
+  /* HEADING FONT SIZES */
+  --h2-font-size: clamp(38px, 3.2vw, 39px);
+  --h3-font-size: 28px;
+  --figure-heading-font-size: 22px;
+
+  /* IONIZATION CONE — IMAGE LEFT, TEXT RIGHT */
+  --cone-image-width: 220px;
+  --cone-image-height: 170px;
+  --cone-column-gap: 50px;
+  --cone-image-down: 8px;
+  --cone-image-right: 45px;
+  --cone-text-width: 540px;
+  --cone-text-right: 50px;
+
+  /* RADIO JETS — TEXT LEFT, IMAGE RIGHT */
+  --jets-image-width: 240px;
+  --jets-image-height: 180px;
+  --jets-column-gap: 20px;
+  --jets-image-down: -8px;
+  --jets-image-right: -60px;
+  --jets-text-width: 540px;
+  --jets-text-right: 45px;
+
+/* GALAXY EVOLUTION FIGURE */
+--galaxy-evolution-width: 800px;
+--galaxy-evolution-up-down: 0px;
+--galaxy-evolution-spacing-above: 20px;
+--galaxy-evolution-spacing-below: 20px;
+--galaxy-evolution-right: 0px;
+
+
+  /* SPACING AND IMAGE CREDITS */
+  --agn-example-spacing: 20px;
+  --agn-intro-spacing: 30px;
+  --agn-conclusion-spacing: 30px;
+  --agn-credit-font-size: 14px;
+
+  /* SPIDERWEB GALAXY */
+  --spiderweb-text-column: 0.9fr;
+  --spiderweb-image-column: 0.65fr;
+  --spiderweb-column-gap: 0px;
+  --spiderweb-image-width: 350px;
+  --spiderweb-image-height: 290px;
+  --spiderweb-image-down: 65px;
+
+
+  /* DRAGONFLY GALAXY */
+  --dragonfly-text-column: 1.15fr;
+  --dragonfly-image-column: 0.7fr;
+  --dragonfly-column-gap: 30px;
+  --dragonfly-image-width: 310px;
+  --dragonfly-image-height: 340px;
+  --dragonfly-image-down: 6px;
+  --dragonfly-image-right: 0px;
+  --dragonfly-spacing-above: 30px;
+  --dragonfly-spacing-below-line: 25px;
+
+  /* JADES [O III] MOSAIC */
+  --jades-text-column: 0.45fr;
+  --jades-image-column: 0.62fr;
+  --jades-column-gap: 0px;
+  --jades-image-width: 470px;
+  --jades-image-height: 330px;
+  --jades-image-down: -15px;
+  --jades-image-right: 0px;
+
+  /* SIMULATIONS — NGC 2992 / MOCK NIRCAM */
+  --simulation-image-width: 440px;
+  --simulation-image-down: -10px;
+
+  /* OBSERVATIONS — JADES GALAXIES */
+  --observations-image-width: 380px;
+  --observations-image-down: -25px;
+
+  /* SIMULATIONS + OBSERVATIONS COLUMN RATIO */
+  --subsection-text-column: 1.0fr;
+  --subsection-image-column: 0.95fr;
+  --subsection-column-gap: 30px;
+
+  /* OBSERVATIONS — INDEPENDENT COLUMN CONTROLS */
+  --observations-text-column: 1.2fr;
+  --observations-image-column: 345px;
+  --observations-column-gap: 40px;
+
+  /* RADIO ACTIVITY */
+  --radio-text-column: 1.05fr;
+  --radio-image-column: 0.38fr;
+  --radio-column-gap: 60px;
+  --radio-image-width: 220px;
+  --radio-image-height: 220px;
+  --radio-image-down: -10px;
+  --radio-image-right: 0px;
+}
+
+
+.page-title {
+  padding: 46px 0 0;
+}
+
+.back-link {
+  color: #e8edf2; /*#eca821d7;*/
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 650;
+  position: relative;
+  left: 25px; /* Adjust horizontal position */
+}
+
+.research-body {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 28px 100px;
+}
+
+.research-body h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 550;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: var(--heading-color);
+  margin: 0 0 27px;
+}
+
+.research-body h3 {
+  font-size: var(--h3-font-size);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--subheading-color);
+  margin: 0 0 17px;
+}
+
+.research-body p {
+  font-size: var(--body-font-size);
+  line-height: 1.6;
+  margin: 0 0 17px;
+  text-align: justify;
+  hyphens: none;
+  overflow-wrap: normal;
+  color: var(--text-color);
+}
+
+.research-section {
+  padding: 30px 0 30px;
+  border-bottom: 3px solid var(--section-divider-color);
+}
+
+.research-section:last-child {
+  border-bottom: 0;
+}
+
+.research-body figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.research-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.research-body figcaption {
+  font-size: var(--caption-font-size);
+  line-height: 1.4;
+  color: var(--caption-text-color);
+  margin-top: 6px;
+  text-align: justify;
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+
+.section-intro {
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+body {
+  background-color: var(--page-background);
+  color: var(--text-color);
+}
+
+
+.research-body p.publication, .research-body p.publication strong, .research-body p.publication em {
+  color: var(--publication-text-color);
+}
+
+.agn-example {
+  display: grid;
+  align-items: center;
+  margin-bottom: var(--agn-example-spacing);
+}
+
+.agn-example figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.agn-example figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: fill;
+  border-radius: 4px;
+}
+
+.agn-example-text {
+  min-width: 0;
+}
+
+.agn-example-text p {
+  margin: 0;
+  text-align: justify;
+  hyphens: none;
+}
+
+.agn-image-credit {
+  font-style: italic;
+  display: block;
+  font-size: var(--agn-credit-font-size);
+  line-height: 1.4;
+  color: var(--caption-text-color);
+  margin-top: 7px;
+}
+
+.agn-cone {
+  grid-template-columns: var(--cone-image-width) minmax(0, 1fr);
+  gap: var(--cone-column-gap);
+  margin-top: var(--agn-intro-spacing);
+}
+
+.agn-cone figure {
+  margin-top: var(--cone-image-down);
+  transform: translateX(var(--cone-image-right));
+}
+
+.agn-cone figure img {
+  height: var(--cone-image-height);
+}
+
+.agn-cone .agn-example-text {
+  transform: translateX(var(--cone-text-right));
+  width: 100%;
+  max-width: var(--cone-text-width);
+}
+
+.agn-jets figure {
+  transform: translateX(var(--jets-image-right));
+  margin-top: var(--jets-image-down);
+}
+
+.agn-jets .agn-example-text {
+  transform: translateX(var(--jets-text-right));
+  width: 100%;
+  max-width: var(--jets-text-width);
+}
+
+.agn-jets {
+  grid-template-columns: minmax(0, 1fr) var(--jets-image-width);
+  gap: var(--jets-column-gap);
+  margin-bottom: var(--agn-conclusion-spacing);
+}
+
+.agn-jets figure img {
+  height: var(--jets-image-height);
+}
+
+.research-body .galaxy-evolution-figure {
+  width: var(--galaxy-evolution-width);
+  max-width: 100%;
+  margin-top: var(--galaxy-evolution-spacing-above);
+  margin-bottom: var(--galaxy-evolution-spacing-below);
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(
+    var(--galaxy-evolution-right),
+    var(--galaxy-evolution-up-down)
+  );
+}
+
+.galaxy-evolution-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, var(--spiderweb-text-column)) minmax(0, var(--spiderweb-image-column));
+  gap: var(--spiderweb-column-gap);
+  align-items: start;
+}
+
+#radio-galaxies .project-grid figure {
+  width: var(--spiderweb-image-width);
+  max-width: 100%;
+  margin: var(--spiderweb-image-down) 0 0 auto;
+}
+
+#radio-galaxies .project-grid figure img {
+  width: 100%;
+  height: var(--spiderweb-image-height);
+  max-height: none;
+  object-fit: fill;
+}
+
+
+/* DRAGONFLY GALAXY */
+.dragonfly-subsection {
+  border-top: 2px solid var(--subsection-divider-color);
+  margin-top: var(--dragonfly-spacing-above);
+  padding-top: var(--dragonfly-spacing-below-line);
+}
+
+.dragonfly-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, var(--dragonfly-image-column))
+    minmax(0, var(--dragonfly-text-column));
+  gap: var(--dragonfly-column-gap);
+  align-items: start;
+}
+
+.dragonfly-grid figure {
+  order: -1;
+  width: var(--dragonfly-image-width);
+  max-width: 100%;
+  margin: 0 auto 0 0;
+  transform: translate(
+    var(--dragonfly-image-right),
+    var(--dragonfly-image-down)
+  );
+}
+
+.dragonfly-grid figure img {
+  width: 100%;
+  height: var(--dragonfly-image-height);
+  object-fit: fill;
+}
+
+@media (max-width: 800px) {
+  .dragonfly-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.oiii-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, var(--jades-text-column)) minmax(0, var(--jades-image-column));
+  gap: var(--jades-column-gap);
+  align-items: center;
+}
+
+#oiii .oiii-intro-grid figure {
+  width: var(--jades-image-width);
+  max-width: 100%;
+  margin: var(--jades-image-down) 0 0 auto;
+  transform: translateX(var(--jades-image-right));
+}
+
+#oiii .oiii-intro-grid figure img {
+  width: 100%;
+  height: var(--jades-image-height);
+  max-height: none;
+  object-fit: fill;
+}
+
+.subsection {
+  padding: 20px 0;
+  border-top: 1px solid var(--subsection-divider-color);
+  margin-top: 28px;
+}
+
+.subsection-grid {
+  display: grid;
+  grid-template-columns: minmax(0, var(--subsection-text-column)) minmax(0, var(--subsection-image-column));
+  gap: var(--subsection-column-gap);
+  align-items: center;
+}
+
+.subsection-grid.reverse .visual {
+  order: 0;
+}
+
+.subsection-grid.reverse .copy {
+  order: 1;
+}
+
+.subsection-grid .visual img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#simulations .visual {
+  width: var(--simulation-image-width);
+  max-width: 100%;
+  margin-top: var(--simulation-image-down);
+  justify-self: start;
+}
+#simulations .figure-heading {
+  position: relative;
+  left: 30px;
+  margin-bottom: 5px;
+}
+
+#observations .visual {
+  width: var(--observations-image-width);
+  max-width: 100%;
+  margin-top: var(--observations-image-down);
+  justify-self: center;
+}
+#observations .figure-heading {
+  position: relative;
+  left: 30px;
+  margin-bottom: 5px;
+}
+
+.figure-heading {
+  color: var(--figure-heading-color);
+  font-size: var(--figure-heading-font-size);
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+.figure-heading span {
+  color: #82689c;
+}
+
+.research-body .publication {
+  font-size: 16px;
+  color: #51495e;
+  margin: -5px 0 0;
+  text-align: left;
+}
+
+.publication strong {
+  color: var(--body-text-color);
+}
+
+footer {
+  width: calc(100% - 56px);
+  max-width: 1060px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-top: 1px solid #726758e2;
+  padding: 24px 0;
+  font-size: 12px;
+  color: var(--home-muted-color);
+  text-align: center;
+}
+
+#observations .subsection-grid, #observations.subsection-grid {
+  grid-template-columns: minmax(0, var(--observations-text-column))
+        minmax(0, var(--observations-image-column));
+  gap: var(--observations-column-gap);
+}
+
+#oiii > p {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 25px;
+}
+
+  /* RADIO ACTIVITY */
+.radio-activity-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, var(--radio-text-column))
+    minmax(0, var(--radio-image-column));
+  gap: var(--radio-column-gap);
+  align-items: center;
+}
+
+.radio-activity-figure {
+  width: var(--radio-image-width);
+  max-width: 100%;
+  margin: 0 0 0 auto;
+  transform: translate(
+    var(--radio-image-right),
+    var(--radio-image-down)
+  );
+}
+
+.radio-activity-figure img {
+  display: block;
+  width: 100%;
+  height: var(--radio-image-height);
+  object-fit: fill;
+}
+
+@media (max-width: 800px) {
+  .agn-example {
+    grid-template-columns: 1fr;
+  }
+  .radio-activity-grid {
+  grid-template-columns: 1fr;
+}
+
+  .agn-example figure {
+    max-width: 200px;
+  }
+
+
+  .overview-grid, .project-grid, .oiii-intro-grid, .subsection-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .intro-image-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .intro-image-column figure {
+    max-width: 260px;
+  }
+
+  .intro-image-column img {
+    width: min(100%, var(--intro-circle-size));
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .subsection-grid.reverse .visual, .subsection-grid.reverse .copy {
+    order: initial;
+  }
+
+  .research-body p {
+    text-align: left;
+  }
+
+  .research-section {
+    padding: 42px 0 50px;
+  }
+
+  .research-body {
+    padding: 0 22px 70px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .intro-image-column {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .intro-image-column figure {
+    max-width: 260px;
+  }
+
+  .page-title {
+    padding-top: 28px;
+  }
+
+}
